@@ -3,11 +3,111 @@
   <head>
     <meta charset="utf-8">
     <title>anfang</title>
+
     <script src="vue.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-modal.css">
-  </head>
-  <body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	box-sizing:border-box;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+	width:100%;
+	float:left;
+	border-bottom:1px solid rgba(0,0,0,0.5);
+color: White;
+background: #3d3d3d;
+}
+
+header img {
+  vertical-align: middle;
+padding: 0 0px 0 0px;
+margin: 0 3px 3px 25px;
+}
+
+.logo {
+	display:block;
+	width:100%;
+	padding:0.5em;
+	text-decoration:none;
+	color:white;
+}
+
+nav {
+	width:100%;
+	float:left;
+}
+
+nav li {
+	float:left;
+	width:100%;
+}
+
+nav a {
+	display:block;
+	height:100%;
+	width:100%;
+	padding:1em;
+	text-decoration:none;
+	color:white;
+	border-top:1px solid rgba(0,0,0,0.5);
+}
+
+nav a:hover {
+	background:rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width:800px) {
+	
+	.logo {
+		width:auto;
+		float:right;	
+	}
+	
+	nav {
+		float:left;
+		width:auto;
+	}
+
+	nav a {
+		border:none;
+	}
+	
+	nav li {
+		width:auto;
+	}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+       <ul>
+<li><img src="images/Phone_43546.png" alt="" width="42" height="42">Whatsapp: +49 173 267 6318</li>
+<li><img src="images/map_route.png" alt="" width="42" height="42">Tangermünderstr 22, 12627 Berlin</li>
+<li><img src="images/email_icon_195x172.png" alt="" width="42" height="42">E-Mail: mireillenou@gmail.com</li>
+
+<!--
+<li><img src="images/Phone_43546.png" alt="" width="42" height="42"><a href="#">WhatsApp</a></li>
+-->
+       </ul>
+    </nav>
+	<a href="#" class="logo">eurocoiffure.org</a>
+</header>
+
 
     <!-- template for the modal component -->
     <script type="text/x-template" id="modal-template">
@@ -42,16 +142,6 @@
       </transition>
     </script>
 
-
-<div id="headline">
-<img src="images/Phone_43546.png" alt="" width="42" height="42">
-Whatsapp: +49 173 267 6318
-<img src="images/map_route.png" alt="" width="42" height="42">
-Tangermünderstr 22, 12627 Berlin
-<img src="images/email_icon_195x172.png" alt="" width="42" height="42">
-E - Mail: mireillenou@gmail.com
-</div>
-
 <div id="main">
 
 {{ message }}
@@ -63,14 +153,14 @@ E - Mail: mireillenou@gmail.com
   -->
   <h3 slot="header">What's App Nachricht schreiben</h3>
   <h3 slot="body">
-<a  href="https://wa.me/491732676318?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20Haarschnitt.%20Bitte%20um%20R%C3%BCckmeldung" target="_blank" rel="nofollow noopener"><img class="logo" src="images/whatsapp.png" alt="Melde dich über WhatsApp" width="100" height="100"></a>
+<a  href="https://wa.me/491732676318?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20Haarschnitt.%20Bitte%20um%20R%C3%BCckmeldung" target="_blank" rel="nofollow noopener"><img class="mitte" src="images/whatsapp.png" alt="Melde dich über WhatsApp" width="100" height="100"></a>
   </h3>
 </modal>
 
   <a href="http://www.eurocoiffure.org">
-    <img class="logo" src="images/logocoif.png">
+    <img class="mitte" src="images/logocoif.png">
   </a> 
-  <button class="logo" id="show-modal" @click="showModal = true">Sende eine Whats-App Nachricht</button>
+  <button class="mitte" id="show-modal" @click="showModal = true">Sende eine Whats-App Nachricht</button>
 
 </div>
 

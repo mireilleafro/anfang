@@ -1,13 +1,5 @@
 body {
-margin: 0;
-padding: 0;
-}
-#headline{
-margin: 0 0 20px;
-padding: 3px;
-color: White;
-background-color: black;
-align-content: center;
+
 }
 
 img {
@@ -15,7 +7,7 @@ img {
   padding-left: 13px;
 }
 
-.logo {
+.mitte {
   display: block;
   margin: 10px auto 10px;
 }
